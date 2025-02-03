@@ -1,4 +1,7 @@
 namespace Payments_API.Interfaces;
-public interface IPhoenixService
+using Payments_API.Models;
+
+public interface IPhoenixService 
 {
+    Task<object> CreateInvoiceAsync(InvoiceRequest request);
 }
